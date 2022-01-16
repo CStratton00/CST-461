@@ -49,4 +49,7 @@ class Blockchain:
 
 blockchain = Blockchain()
 blockchain.add_block("First Block")
+blockchain.add_block(("Alice pays Bob", 10))
+blockchain.add_block(("Bob pays Carol", 20))
+blockchain.add_block(("Carol pays Alice", 30))
 blockchain.print_chain()
