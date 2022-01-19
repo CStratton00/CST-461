@@ -1,0 +1,99 @@
+{
+	"compiler": {
+		"version": "0.8.11+commit.d7f03943"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "totalVotesA",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalVotesB",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "voteForA",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "voteForB",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "winner",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Google Drive/School/GCU/Fall 2021 - Spring 2022/CST-461/CST-461/IntroductionToEthereum/Program4.sol": "simpleVoter"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Google Drive/School/GCU/Fall 2021 - Spring 2022/CST-461/CST-461/IntroductionToEthereum/Program4.sol": {
+			"keccak256": "0x2f9bfd6b9d0ca5aa75bae744d9df7d7b69dfdef6535ea531289f2d59e6bbd7cc",
+			"license": "Collin Stratton",
+			"urls": [
+				"bzz-raw://df41ed679f8bda2801b71d3455a6af465010682bf7c64173fdf32d8a64ea45cc",
+				"dweb:/ipfs/QmTiEbcBpGx1oB6qySGWfc2deWXV7Jj92CL5R4MKX1Lq2G"
+			]
+		}
+	},
+	"version": 1
+}

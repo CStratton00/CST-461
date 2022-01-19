@@ -1,0 +1,93 @@
+{
+	"compiler": {
+		"version": "0.8.11+commit.d7f03943"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "addFunds",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "buyOutfit",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "buyPants",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "buyShirt",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalMoney",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Google Drive/School/GCU/Fall 2021 - Spring 2022/CST-461/CST-461/IntroductionToEthereum/Program3.sol": "Store"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Google Drive/School/GCU/Fall 2021 - Spring 2022/CST-461/CST-461/IntroductionToEthereum/Program3.sol": {
+			"keccak256": "0x6ef17252bbf35a33ad715c3253b3f01b366e5c320d01eac16de83432c2a77059",
+			"license": "Collin Stratton",
+			"urls": [
+				"bzz-raw://499f28e07a84fdf6a60e6e60374c9bd04bfb35956a8a279133ec2a0b720cfa06",
+				"dweb:/ipfs/QmTfcMVwHoQjQGfgWUwcUWUx81LvwNpM42ZgFrLUZN1Cnb"
+			]
+		}
+	},
+	"version": 1
+}
