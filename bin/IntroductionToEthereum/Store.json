@@ -1,0 +1,895 @@
+{
+    "contractName": "Store",
+    "abi": [
+        {
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                }
+            ],
+            "name": "addFunds",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "buyOutfit",
+            "outputs": [],
+            "stateMutability": "payable",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "buyPants",
+            "outputs": [],
+            "stateMutability": "payable",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "buyShirt",
+            "outputs": [],
+            "stateMutability": "payable",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "totalMoney",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        }
+    ],
+    "metadata": "{\"compiler\":{\"version\":\"0.8.11+commit.d7f03943\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"addFunds\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"buyOutfit\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"buyPants\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"buyShirt\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"totalMoney\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/collinstratton/Google Drive/School/GCU/Fall 2021 - Spring 2022/CST-461/CST-461/IntroductionToEthereum/Program3.sol\":\"Store\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/collinstratton/Google Drive/School/GCU/Fall 2021 - Spring 2022/CST-461/CST-461/IntroductionToEthereum/Program3.sol\":{\"keccak256\":\"0x6ef17252bbf35a33ad715c3253b3f01b366e5c320d01eac16de83432c2a77059\",\"license\":\"Collin Stratton\",\"urls\":[\"bzz-raw://499f28e07a84fdf6a60e6e60374c9bd04bfb35956a8a279133ec2a0b720cfa06\",\"dweb:/ipfs/QmTfcMVwHoQjQGfgWUwcUWUx81LvwNpM42ZgFrLUZN1Cnb\"]}},\"version\":1}",
+    "bytecode": "608060405260008055600a600155601460025534801561001e57600080fd5b506101d48061002e6000396000f3fe60806040526004361061004a5760003560e01c806328366a6b1461004f578063347a2c951461005957806387da21e314610061578063be99970514610083578063dad2b643146100a3575b600080fd5b6100576100ab565b005b6100576100eb565b34801561006d57600080fd5b5060005460405190815260200160405180910390f35b34801561008f57600080fd5b5061005761009e366004610140565b610109565b610057610122565b6000546002546001546100be919061016f565b116100e9576002546001546100d3919061016f565b6000808282546100e39190610187565b90915550505b565b600054600254116100e9576002546000808282546100e39190610187565b8060008082825461011a919061016f565b909155505050565b600054600154116100e9576001546000808282546100e39190610187565b60006020828403121561015257600080fd5b5035919050565b634e487b7160e01b600052601160045260246000fd5b6000821982111561018257610182610159565b500190565b60008282101561019957610199610159565b50039056fea26469706673582212206c0b0622350731097720c0e6a43de29ebb3b662513bca578027511bafdbfa89664736f6c634300080b0033",
+    "deployedBytecode": "60806040526004361061004a5760003560e01c806328366a6b1461004f578063347a2c951461005957806387da21e314610061578063be99970514610083578063dad2b643146100a3575b600080fd5b6100576100ab565b005b6100576100eb565b34801561006d57600080fd5b5060005460405190815260200160405180910390f35b34801561008f57600080fd5b5061005761009e366004610140565b610109565b610057610122565b6000546002546001546100be919061016f565b116100e9576002546001546100d3919061016f565b6000808282546100e39190610187565b90915550505b565b600054600254116100e9576002546000808282546100e39190610187565b8060008082825461011a919061016f565b909155505050565b600054600154116100e9576001546000808282546100e39190610187565b60006020828403121561015257600080fd5b5035919050565b634e487b7160e01b600052601160045260246000fd5b6000821982111561018257610182610159565b500190565b60008282101561019957610199610159565b50039056fea26469706673582212206c0b0622350731097720c0e6a43de29ebb3b662513bca578027511bafdbfa89664736f6c634300080b0033",
+    "sourceMap": "70:655:2:-:0;;;104:1;91:14;;129:2;111:20;;155:2;137:20;;70:655;;;;;;;;;;;;;;;;",
+    "deployedSourceMap": "70:655:2:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;576:147;;;:::i;:::-;;450:120;;;:::i;240:78::-;;;;;;;;;;-1:-1:-1;283:4:2;306:5;240:78;;160:25:7;;;148:2;133:18;240:78:2;;;;;;;164:70;;;;;;;;;;-1:-1:-1;164:70:2;;;;;:::i;:::-;;:::i;324:120::-;;;:::i;576:147::-;653:5;;639:10;;626;;:23;;;;:::i;:::-;:32;622:95;;696:10;;683;;:23;;;;:::i;:::-;674:5;;:32;;;;;;;:::i;:::-;;;;-1:-1:-1;;622:95:2;576:147::o;450:120::-;513:5;;499:10;;:19;495:69;;543:10;;534:5;;:19;;;;;;;:::i;164:70::-;221:6;212:5;;:15;;;;;;;:::i;:::-;;;;-1:-1:-1;;;164:70:2:o;324:120::-;387:5;;373:10;;:19;369:69;;417:10;;408:5;;:19;;;;;;;:::i;196:180:7:-;255:6;308:2;296:9;287:7;283:23;279:32;276:52;;;324:1;321;314:12;276:52;-1:-1:-1;347:23:7;;196:180;-1:-1:-1;196:180:7:o;381:127::-;442:10;437:3;433:20;430:1;423:31;473:4;470:1;463:15;497:4;494:1;487:15;513:128;553:3;584:1;580:6;577:1;574:13;571:39;;;590:18;;:::i;:::-;-1:-1:-1;626:9:7;;513:128::o;646:125::-;686:4;714:1;711;708:8;705:34;;;719:18;;:::i;:::-;-1:-1:-1;756:9:7;;646:125::o",
+    "sourcePath": "/Users/collinstratton/Google Drive/School/GCU/Fall 2021 - Spring 2022/CST-461/CST-461/IntroductionToEthereum/Program3.sol",
+    "compiler": {
+        "name": "solc",
+        "version": "0.8.11+commit.d7f03943"
+    },
+    "ast": {
+        "absolutePath": "/Users/collinstratton/Google Drive/School/GCU/Fall 2021 - Spring 2022/CST-461/CST-461/IntroductionToEthereum/Program3.sol",
+        "exportedSymbols": {
+            "Store": [
+                208
+            ]
+        },
+        "id": 209,
+        "license": "Collin Stratton",
+        "nodeType": "SourceUnit",
+        "nodes": [
+            {
+                "id": 137,
+                "literals": [
+                    "solidity",
+                    "^",
+                    "0.8",
+                    ".10"
+                ],
+                "nodeType": "PragmaDirective",
+                "src": "44:24:2"
+            },
+            {
+                "abstract": false,
+                "baseContracts": [],
+                "canonicalName": "Store",
+                "contractDependencies": [],
+                "contractKind": "contract",
+                "fullyImplemented": true,
+                "id": 208,
+                "linearizedBaseContracts": [
+                    208
+                ],
+                "name": "Store",
+                "nameLocation": "79:5:2",
+                "nodeType": "ContractDefinition",
+                "nodes": [
+                    {
+                        "constant": false,
+                        "id": 140,
+                        "mutability": "mutable",
+                        "name": "money",
+                        "nameLocation": "96:5:2",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 208,
+                        "src": "91:14:2",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                        },
+                        "typeName": {
+                            "id": 138,
+                            "name": "uint",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "91:4:2",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                            }
+                        },
+                        "value": {
+                            "hexValue": "30",
+                            "id": 139,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "number",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "104:1:2",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_rational_0_by_1",
+                                "typeString": "int_const 0"
+                            },
+                            "value": "0"
+                        },
+                        "visibility": "internal"
+                    },
+                    {
+                        "constant": false,
+                        "id": 143,
+                        "mutability": "mutable",
+                        "name": "shirtPrice",
+                        "nameLocation": "116:10:2",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 208,
+                        "src": "111:20:2",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                        },
+                        "typeName": {
+                            "id": 141,
+                            "name": "uint",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "111:4:2",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                            }
+                        },
+                        "value": {
+                            "hexValue": "3130",
+                            "id": 142,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "number",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "129:2:2",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_rational_10_by_1",
+                                "typeString": "int_const 10"
+                            },
+                            "value": "10"
+                        },
+                        "visibility": "internal"
+                    },
+                    {
+                        "constant": false,
+                        "id": 146,
+                        "mutability": "mutable",
+                        "name": "pantsPrice",
+                        "nameLocation": "142:10:2",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 208,
+                        "src": "137:20:2",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                        },
+                        "typeName": {
+                            "id": 144,
+                            "name": "uint",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "137:4:2",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                            }
+                        },
+                        "value": {
+                            "hexValue": "3230",
+                            "id": 145,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "number",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "155:2:2",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_rational_20_by_1",
+                                "typeString": "int_const 20"
+                            },
+                            "value": "20"
+                        },
+                        "visibility": "internal"
+                    },
+                    {
+                        "body": {
+                            "id": 155,
+                            "nodeType": "Block",
+                            "src": "202:32:2",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "id": 153,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "id": 151,
+                                            "name": "money",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 140,
+                                            "src": "212:5:2",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "+=",
+                                        "rightHandSide": {
+                                            "id": 152,
+                                            "name": "amount",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 148,
+                                            "src": "221:6:2",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "src": "212:15:2",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "id": 154,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "212:15:2"
+                                }
+                            ]
+                        },
+                        "functionSelector": "be999705",
+                        "id": 156,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "addFunds",
+                        "nameLocation": "173:8:2",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 149,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 148,
+                                    "mutability": "mutable",
+                                    "name": "amount",
+                                    "nameLocation": "187:6:2",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 156,
+                                    "src": "182:11:2",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    },
+                                    "typeName": {
+                                        "id": 147,
+                                        "name": "uint",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "182:4:2",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "181:13:2"
+                        },
+                        "returnParameters": {
+                            "id": 150,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "202:0:2"
+                        },
+                        "scope": 208,
+                        "src": "164:70:2",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 163,
+                            "nodeType": "Block",
+                            "src": "289:29:2",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "id": 161,
+                                        "name": "money",
+                                        "nodeType": "Identifier",
+                                        "overloadedDeclarations": [],
+                                        "referencedDeclaration": 140,
+                                        "src": "306:5:2",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "functionReturnParameters": 160,
+                                    "id": 162,
+                                    "nodeType": "Return",
+                                    "src": "299:12:2"
+                                }
+                            ]
+                        },
+                        "functionSelector": "87da21e3",
+                        "id": 164,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "totalMoney",
+                        "nameLocation": "249:10:2",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 157,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "259:2:2"
+                        },
+                        "returnParameters": {
+                            "id": 160,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 159,
+                                    "mutability": "mutable",
+                                    "name": "",
+                                    "nameLocation": "-1:-1:-1",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 164,
+                                    "src": "283:4:2",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    },
+                                    "typeName": {
+                                        "id": 158,
+                                        "name": "uint",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "283:4:2",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "282:6:2"
+                        },
+                        "scope": 208,
+                        "src": "240:78:2",
+                        "stateMutability": "view",
+                        "virtual": false,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 176,
+                            "nodeType": "Block",
+                            "src": "359:85:2",
+                            "statements": [
+                                {
+                                    "condition": {
+                                        "commonType": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        },
+                                        "id": 169,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftExpression": {
+                                            "id": 167,
+                                            "name": "shirtPrice",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 143,
+                                            "src": "373:10:2",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "nodeType": "BinaryOperation",
+                                        "operator": "<=",
+                                        "rightExpression": {
+                                            "id": 168,
+                                            "name": "money",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 140,
+                                            "src": "387:5:2",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "src": "373:19:2",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_bool",
+                                            "typeString": "bool"
+                                        }
+                                    },
+                                    "id": 175,
+                                    "nodeType": "IfStatement",
+                                    "src": "369:69:2",
+                                    "trueBody": {
+                                        "id": 174,
+                                        "nodeType": "Block",
+                                        "src": "394:44:2",
+                                        "statements": [
+                                            {
+                                                "expression": {
+                                                    "id": 172,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": false,
+                                                    "lValueRequested": false,
+                                                    "leftHandSide": {
+                                                        "id": 170,
+                                                        "name": "money",
+                                                        "nodeType": "Identifier",
+                                                        "overloadedDeclarations": [],
+                                                        "referencedDeclaration": 140,
+                                                        "src": "408:5:2",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_uint256",
+                                                            "typeString": "uint256"
+                                                        }
+                                                    },
+                                                    "nodeType": "Assignment",
+                                                    "operator": "-=",
+                                                    "rightHandSide": {
+                                                        "id": 171,
+                                                        "name": "shirtPrice",
+                                                        "nodeType": "Identifier",
+                                                        "overloadedDeclarations": [],
+                                                        "referencedDeclaration": 143,
+                                                        "src": "417:10:2",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_uint256",
+                                                            "typeString": "uint256"
+                                                        }
+                                                    },
+                                                    "src": "408:19:2",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_uint256",
+                                                        "typeString": "uint256"
+                                                    }
+                                                },
+                                                "id": 173,
+                                                "nodeType": "ExpressionStatement",
+                                                "src": "408:19:2"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "functionSelector": "dad2b643",
+                        "id": 177,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "buyShirt",
+                        "nameLocation": "333:8:2",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 165,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "341:2:2"
+                        },
+                        "returnParameters": {
+                            "id": 166,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "359:0:2"
+                        },
+                        "scope": 208,
+                        "src": "324:120:2",
+                        "stateMutability": "payable",
+                        "virtual": false,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 189,
+                            "nodeType": "Block",
+                            "src": "485:85:2",
+                            "statements": [
+                                {
+                                    "condition": {
+                                        "commonType": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        },
+                                        "id": 182,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftExpression": {
+                                            "id": 180,
+                                            "name": "pantsPrice",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 146,
+                                            "src": "499:10:2",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "nodeType": "BinaryOperation",
+                                        "operator": "<=",
+                                        "rightExpression": {
+                                            "id": 181,
+                                            "name": "money",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 140,
+                                            "src": "513:5:2",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "src": "499:19:2",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_bool",
+                                            "typeString": "bool"
+                                        }
+                                    },
+                                    "id": 188,
+                                    "nodeType": "IfStatement",
+                                    "src": "495:69:2",
+                                    "trueBody": {
+                                        "id": 187,
+                                        "nodeType": "Block",
+                                        "src": "520:44:2",
+                                        "statements": [
+                                            {
+                                                "expression": {
+                                                    "id": 185,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": false,
+                                                    "lValueRequested": false,
+                                                    "leftHandSide": {
+                                                        "id": 183,
+                                                        "name": "money",
+                                                        "nodeType": "Identifier",
+                                                        "overloadedDeclarations": [],
+                                                        "referencedDeclaration": 140,
+                                                        "src": "534:5:2",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_uint256",
+                                                            "typeString": "uint256"
+                                                        }
+                                                    },
+                                                    "nodeType": "Assignment",
+                                                    "operator": "-=",
+                                                    "rightHandSide": {
+                                                        "id": 184,
+                                                        "name": "pantsPrice",
+                                                        "nodeType": "Identifier",
+                                                        "overloadedDeclarations": [],
+                                                        "referencedDeclaration": 146,
+                                                        "src": "543:10:2",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_uint256",
+                                                            "typeString": "uint256"
+                                                        }
+                                                    },
+                                                    "src": "534:19:2",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_uint256",
+                                                        "typeString": "uint256"
+                                                    }
+                                                },
+                                                "id": 186,
+                                                "nodeType": "ExpressionStatement",
+                                                "src": "534:19:2"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "functionSelector": "347a2c95",
+                        "id": 190,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "buyPants",
+                        "nameLocation": "459:8:2",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 178,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "467:2:2"
+                        },
+                        "returnParameters": {
+                            "id": 179,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "485:0:2"
+                        },
+                        "scope": 208,
+                        "src": "450:120:2",
+                        "stateMutability": "payable",
+                        "virtual": false,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 206,
+                            "nodeType": "Block",
+                            "src": "612:111:2",
+                            "statements": [
+                                {
+                                    "condition": {
+                                        "commonType": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        },
+                                        "id": 197,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftExpression": {
+                                            "commonType": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            },
+                                            "id": 195,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": false,
+                                            "lValueRequested": false,
+                                            "leftExpression": {
+                                                "id": 193,
+                                                "name": "shirtPrice",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 143,
+                                                "src": "626:10:2",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            },
+                                            "nodeType": "BinaryOperation",
+                                            "operator": "+",
+                                            "rightExpression": {
+                                                "id": 194,
+                                                "name": "pantsPrice",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 146,
+                                                "src": "639:10:2",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            },
+                                            "src": "626:23:2",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "nodeType": "BinaryOperation",
+                                        "operator": "<=",
+                                        "rightExpression": {
+                                            "id": 196,
+                                            "name": "money",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 140,
+                                            "src": "653:5:2",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "src": "626:32:2",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_bool",
+                                            "typeString": "bool"
+                                        }
+                                    },
+                                    "id": 205,
+                                    "nodeType": "IfStatement",
+                                    "src": "622:95:2",
+                                    "trueBody": {
+                                        "id": 204,
+                                        "nodeType": "Block",
+                                        "src": "660:57:2",
+                                        "statements": [
+                                            {
+                                                "expression": {
+                                                    "id": 202,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": false,
+                                                    "lValueRequested": false,
+                                                    "leftHandSide": {
+                                                        "id": 198,
+                                                        "name": "money",
+                                                        "nodeType": "Identifier",
+                                                        "overloadedDeclarations": [],
+                                                        "referencedDeclaration": 140,
+                                                        "src": "674:5:2",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_uint256",
+                                                            "typeString": "uint256"
+                                                        }
+                                                    },
+                                                    "nodeType": "Assignment",
+                                                    "operator": "-=",
+                                                    "rightHandSide": {
+                                                        "commonType": {
+                                                            "typeIdentifier": "t_uint256",
+                                                            "typeString": "uint256"
+                                                        },
+                                                        "id": 201,
+                                                        "isConstant": false,
+                                                        "isLValue": false,
+                                                        "isPure": false,
+                                                        "lValueRequested": false,
+                                                        "leftExpression": {
+                                                            "id": 199,
+                                                            "name": "shirtPrice",
+                                                            "nodeType": "Identifier",
+                                                            "overloadedDeclarations": [],
+                                                            "referencedDeclaration": 143,
+                                                            "src": "683:10:2",
+                                                            "typeDescriptions": {
+                                                                "typeIdentifier": "t_uint256",
+                                                                "typeString": "uint256"
+                                                            }
+                                                        },
+                                                        "nodeType": "BinaryOperation",
+                                                        "operator": "+",
+                                                        "rightExpression": {
+                                                            "id": 200,
+                                                            "name": "pantsPrice",
+                                                            "nodeType": "Identifier",
+                                                            "overloadedDeclarations": [],
+                                                            "referencedDeclaration": 146,
+                                                            "src": "696:10:2",
+                                                            "typeDescriptions": {
+                                                                "typeIdentifier": "t_uint256",
+                                                                "typeString": "uint256"
+                                                            }
+                                                        },
+                                                        "src": "683:23:2",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_uint256",
+                                                            "typeString": "uint256"
+                                                        }
+                                                    },
+                                                    "src": "674:32:2",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_uint256",
+                                                        "typeString": "uint256"
+                                                    }
+                                                },
+                                                "id": 203,
+                                                "nodeType": "ExpressionStatement",
+                                                "src": "674:32:2"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "functionSelector": "28366a6b",
+                        "id": 207,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "buyOutfit",
+                        "nameLocation": "585:9:2",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 191,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "594:2:2"
+                        },
+                        "returnParameters": {
+                            "id": 192,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "612:0:2"
+                        },
+                        "scope": 208,
+                        "src": "576:147:2",
+                        "stateMutability": "payable",
+                        "virtual": false,
+                        "visibility": "public"
+                    }
+                ],
+                "scope": 209,
+                "src": "70:655:2",
+                "usedErrors": []
+            }
+        ],
+        "src": "44:681:2"
+    },
+    "functionHashes": {
+        "addFunds(uint256)": "be999705",
+        "buyOutfit()": "28366a6b",
+        "buyPants()": "347a2c95",
+        "buyShirt()": "dad2b643",
+        "totalMoney()": "87da21e3"
+    },
+    "gasEstimates": {
+        "creation": {
+            "codeDepositCost": "93600",
+            "executionCost": "49359",
+            "totalCost": "142959"
+        },
+        "external": {
+            "addFunds(uint256)": "24562",
+            "buyOutfit()": "infinite",
+            "buyPants()": "30735",
+            "buyShirt()": "30801",
+            "totalMoney()": "2290"
+        }
+    }
+}

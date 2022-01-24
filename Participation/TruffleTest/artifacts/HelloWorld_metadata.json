@@ -1,0 +1,58 @@
+{
+	"compiler": {
+		"version": "0.8.6+commit.11564f7e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getHelloMessage",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Participation/TruffleTest/HelloWorld.sol": "HelloWorld"
+		},
+		"evmVersion": "berlin",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Participation/TruffleTest/HelloWorld.sol": {
+			"keccak256": "0xb27a1d64284eb2eb346172c3b3cb3efce9595a685a95774eebd0c118c474bde2",
+			"urls": [
+				"bzz-raw://6935479a5d21965f58ff405d367c714ab22dfc8072db9701e12d52d5fae3546d",
+				"dweb:/ipfs/QmTKF323pzP7eQ8tcpeW4pALzXRcGPWw3M8MiVK6wbCmxW"
+			]
+		}
+	},
+	"version": 1
+}
