@@ -1,0 +1,226 @@
+{
+	"compiler": {
+		"version": "0.8.6+commit.11564f7e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_money",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_auth_key",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_location",
+						"type": "uint256"
+					}
+				],
+				"name": "AddCustomer",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "CreateCustomers",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "CreateTaxis",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "auth_key",
+						"type": "uint256"
+					}
+				],
+				"name": "CustomerAuthentication",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "taxi_ids",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "taxi_loc",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "uint256",
+						"name": "location",
+						"type": "uint256"
+					}
+				],
+				"name": "GetClosestVehicle",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "uloc",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "vid",
+						"type": "uint256"
+					}
+				],
+				"name": "InitialFeeCalculation",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "auth_key",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "destination",
+						"type": "uint256"
+					}
+				],
+				"name": "OrderTaxi",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "uloc",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "destination",
+						"type": "uint256"
+					}
+				],
+				"name": "TravelFeeCalculation",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"EthereumDevelopment/TaxiOrderSC.sol": "TaxiOrder"
+		},
+		"evmVersion": "berlin",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"EthereumDevelopment/AutonomousTaxiVehicles.sol": {
+			"keccak256": "0x12eeb936dd140c199e4b09abb19d4da26f38507f1fc1904fdc2fb9df9824ca3e",
+			"license": "Collin Stratton",
+			"urls": [
+				"bzz-raw://f8f228d109f80e01292be5a65ab838b29ec0db9c789319b298ef348a8068c829",
+				"dweb:/ipfs/QmcjbWMJkaj2tkXU4gFAbUBGHgzppgrnpDEkRVEKUnWc8x"
+			]
+		},
+		"EthereumDevelopment/TaxiOrderSC.sol": {
+			"keccak256": "0x00aa9ee9772ba8272058a1f54e96babb91a496fa36945ef46e13656dbdba97a4",
+			"license": "Collin Stratton",
+			"urls": [
+				"bzz-raw://442a606703c01311fa4a39cd29fb3730d9671f9a1528c1e396f6af496235d48f",
+				"dweb:/ipfs/QmeRBwALS3cgS8XtZiRKSaXrj5qDB6WtZF2T4S7yfUQuFU"
+			]
+		}
+	},
+	"version": 1
+}

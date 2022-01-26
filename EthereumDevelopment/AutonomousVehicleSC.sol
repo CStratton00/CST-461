@@ -1,7 +1,9 @@
 // SPDX-License-Identifier: Collin Stratton
 pragma solidity >=0.7.0 <0.9.0;
 
+// contract for a self sustainable autonomous taxi network
 contract SmartVehicle {
+    // vehicle struct containing all relevant vehicle information for individual vehicles
     struct Vehicle {
         uint id;
         uint miles;
@@ -14,6 +16,7 @@ contract SmartVehicle {
         string report;
     }
 
+    // customer struct containing all the variables necessary for a customer
     struct Customer {
         uint id;
         uint money;
@@ -21,18 +24,22 @@ contract SmartVehicle {
         uint location;
     }
 
+    // create some cars and add them to a list
     Vehicle car1;
     Vehicle car2;
     Vehicle car3;
 
     Vehicle[] public carList = [car1, car2, car3];
 
+    // create some customers and add them to a list
     Customer customer1;
     Customer customer2;
     Customer customer3;
 
     Customer[] public customerList = [customer1, customer2, customer3];
 
+
+    // add values to the initally created cars
     function setCars() public {
         car1.id = 1;
         car1.miles = 0;
@@ -65,6 +72,7 @@ contract SmartVehicle {
         car3.report = "";
     }
 
+    // function to add new cars to the list
     function addNewCar(uint id, uint miles, uint location, uint gas_level, uint time_driven, uint status, uint miles_to_service, uint revenue, string memory report) public {
         Vehicle memory newCar;
         newCar.id = id;
@@ -80,6 +88,7 @@ contract SmartVehicle {
         carList.push(newCar);
     }
 
+    // function to add new customers to the list
     function setCustomers() public {
         customer1.id = 1;
         customer1.money = 1000;
@@ -97,6 +106,7 @@ contract SmartVehicle {
         customer3.location = 3;
     }
 
+    // function to add new customers to the list
     function addNewCustomers(uint id, uint money, uint auth_key, uint location) public {
         Customer memory newCustomer;
         newCustomer.id = id;
@@ -107,6 +117,7 @@ contract SmartVehicle {
         customerList.push(newCustomer);
     }
 
+    // user function to request a vehicle
     function CallRide(uint id, uint auth_key, uint destination) public {
         // initialize user variables
         uint uid;
@@ -134,6 +145,7 @@ contract SmartVehicle {
             carList[vid].status = (carList[vid].location - location) + (destination - carList[vid].location);
             customerList[uid].money -= (init_fee + travel_fee);
         } else {
+            // notify the user that they do not have enough money
             return;
         }
     }
@@ -172,7 +184,7 @@ contract SmartVehicle {
 
     // check the vehicle condition of the inputted id
     function CheckVehicle(uint vid) public view returns(bool) {
-        // check if car needs gase
+        // check if car needs gas
         if(carList[vid].gas_level < 10) {
             // carList[vid].report = "Gas is low, please refill";
             return false;
@@ -184,6 +196,7 @@ contract SmartVehicle {
             return false;
         }
 
+        // return true if the car is ready to be used
         return true;
     }
 
@@ -191,7 +204,7 @@ contract SmartVehicle {
     // event initialFeeCalculation(uint initial_fee);
     function InitialFeeCalculation(uint uloc, uint vid) public view returns(uint) {
         uint distance = carList[vid].location - uloc;
-        uint initial_fee = distance * 3; // assuming distance is miles and the fee is $3 per mile
+        uint initial_fee = distance * 3; // assuming distance is miles and the fee is $3 per mile to request the vehicle
 
         // emit initialFeeCalculation(initial_fee);
         return initial_fee;
@@ -201,7 +214,7 @@ contract SmartVehicle {
     // event travelFeeCalculation(uint travel_fee);
     function TravelFeeCalculation(uint uloc, uint destination) public pure returns(uint) {
         uint distance = uloc - destination;
-        uint final_fee = distance * 2; // assuming distance is miles and the fee is $2 per mile
+        uint final_fee = distance * 2; // assuming distance is miles and the fee is $2 per mile to travel to the destination
 
         // emit travelFeeCalculation(final_fee);
         return final_fee;

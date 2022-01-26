@@ -1,0 +1,318 @@
+{
+	"compiler": {
+		"version": "0.8.6+commit.11564f7e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_miles_driven",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_curr_loc",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_gas_level",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_time_driven",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_curr_route_time",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "_status",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_miles_to_service",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_revenue",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_report",
+						"type": "string"
+					}
+				],
+				"name": "AddVehicle",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "DisplayAllVehciles",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "i",
+						"type": "uint256"
+					}
+				],
+				"name": "DisplayVehicle",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "temp_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "temp_miles_driven",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "temp_curr_loc",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "temp_gas_level",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "temp_time_driven",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "temp_curr_route_time",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "temp_status",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "temp_miles_to_service",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "temp_revenue",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "temp_report",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "vid",
+						"type": "uint256"
+					}
+				],
+				"name": "GetVehicleLocation",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "temp_curr_loc",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "vid",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_curr_route_time",
+						"type": "uint256"
+					}
+				],
+				"name": "ModifyVehicleRouteTime",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "vid",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "_status",
+						"type": "bool"
+					}
+				],
+				"name": "ModifyVehicleStatus",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "SearchAvailableCars",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "temp_id",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "temp_loc",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "inventory",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "miles_driven",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "curr_loc",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "gas_level",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "time_driven",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "curr_route_time",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "status",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "miles_to_service",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "revenue",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "report",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"EthereumDevelopment/AutonomousTaxiVehicles.sol": "AutonomousTaxiVehicles"
+		},
+		"evmVersion": "berlin",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"EthereumDevelopment/AutonomousTaxiVehicles.sol": {
+			"keccak256": "0x12eeb936dd140c199e4b09abb19d4da26f38507f1fc1904fdc2fb9df9824ca3e",
+			"license": "Collin Stratton",
+			"urls": [
+				"bzz-raw://f8f228d109f80e01292be5a65ab838b29ec0db9c789319b298ef348a8068c829",
+				"dweb:/ipfs/QmcjbWMJkaj2tkXU4gFAbUBGHgzppgrnpDEkRVEKUnWc8x"
+			]
+		}
+	},
+	"version": 1
+}
