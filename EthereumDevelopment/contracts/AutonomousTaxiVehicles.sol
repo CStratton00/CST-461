@@ -96,4 +96,22 @@ contract AutonomousTaxiVehicles {
 
         return(temp_id, temp_loc);
     }
+
+    function CheckGasLevel(uint vid) public view returns (uint temp_gas_level) {
+        for(uint i = 0; i < vehicle_ids.length; i++) {
+            if(vehicle_ids[i] == vid) {
+                temp_gas_level = inventory[i].gas_level;
+            }
+        }
+        return(temp_gas_level);
+    }
+
+    function CheckServiceMiles(uint vid) public view returns (uint temp_miles_to_service) {
+        for(uint i = 0; i < vehicle_ids.length; i++) {
+            if(vehicle_ids[i] == vid) {
+                temp_miles_to_service = inventory[i].miles_to_service;
+            }
+        }
+        return(temp_miles_to_service);
+    }
 }
