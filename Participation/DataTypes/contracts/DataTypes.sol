@@ -18,7 +18,15 @@ contract DataTypes {
     string sMsg = "hello"; 
 
     function getStateVariables() public view returns (uint, int, uint, bool, address, bytes32, string memory) {
+        require (x >= 0);
+        require (i <= 0);
         return (x, i, j, isEthereumCool, owner, bMsg, sMsg); 
+    }
+
+    function loop() public {
+        while (x < 10) {
+            x++;
+        }
     }
 
 }
