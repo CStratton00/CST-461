@@ -1,6 +1,5 @@
-
 const HDWalletProvider = require("@truffle/hdwallet-provider");
-// OLD CODE: var mnemonic = "YOUR MNEMONIC FROM YOUR WALLET (MetaMask)";
+const mnemonic = "rebel silly diary soap metal usage veteran wrestle repeat fragile heart service";
 
 module.exports = {
   networks: {
@@ -11,7 +10,7 @@ module.exports = {
     },
     ropsten: {
       provider: function() { 
-        return new HDWalletProvider(mnemonic, "https://ropsten.infura.io/v3/db7278945d1741a4963fdcaa6a0c47e6");
+        return new HDWalletProvider(mnemonic, "https://ropsten.infura.io/v3/733d2cc91b154ca2a8d044c1611afd84");
       },
       network_id: 3,
       gas: 4500000,
@@ -19,7 +18,7 @@ module.exports = {
     },
     live: {
       provider: function() { 
-        return new HDWalletProvider(mnemonic, "https://mainnet.infura.io/v3/db7278945d1741a4963fdcaa6a0c47e6");
+        return new HDWalletProvider(mnemonic, "https://mainnet.infura.io/v3/733d2cc91b154ca2a8d044c1611afd84");
       },
       network_id: 1,
       gas: 7500000,
