@@ -9,11 +9,19 @@ contract cryptomon {
     address owner;
     moves[] attacks;
 
-    constructor(uint32 attack_, uint32 defense_, uint32 hp_, address owner_, moves[] memory attacks_) {
-        attack = attack_;
-        defense = defense_;
-        hp = hp_;
-        owner = owner_;
-        attacks = attacks_;
-    }
+    // constructor() {
+    //     attack = 0;
+    //     defense = 0;
+    //     hp = 0;
+    //     owner = 0xCf25e0b242190Bb53B58E8FD7e99a05e97CbBd9E;
+    //     attacks = []
+    // }
+
+    // constructor(uint32 attack_, uint32 defense_, uint32 hp_, address owner_, moves[] memory attacks_) {
+    //     attack = attack_;
+    //     defense = defense_;
+    //     hp = hp_;
+    //     owner = owner_;
+    //     attacks = attacks_;
+    // }
 }

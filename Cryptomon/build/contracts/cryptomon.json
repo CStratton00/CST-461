@@ -1,0 +1,571 @@
+{
+  "contractName": "cryptomon",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.11+commit.d7f03943\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/cryptomon.sol\":\"cryptomon\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/cryptomon.sol\":{\"keccak256\":\"0xc8b9fe1f2627817ba0027e3f2dca3673d29898dcc93d3acca88419028a49bd97\",\"license\":\"Logan Hoots and Collin Stratton Project\",\"urls\":[\"bzz-raw://1b1de1029f0a5a38e8de1e27293f4bd78be3207e51b61690691c395aede4d788\",\"dweb:/ipfs/QmScRJUULWX9fiFGpc6UhHrjT8UMm8HTEySr9cg9wsTvsA\"]},\"project:/contracts/move.sol\":{\"keccak256\":\"0xfe1a030069387c9befc72badee65f8ee333c38ee73b709f5f41342499916e420\",\"license\":\"Logan Hoots and Collin Stratton Project\",\"urls\":[\"bzz-raw://c39be01eb190c990d1499846571f8076c55d97782b82f9a8fd31c24d4eb3c2c8\",\"dweb:/ipfs/QmZt9DMJRtDJmwaKti9WDMuDESFTG6eovww66fzvtSRyzu\"]},\"project:/contracts/moves.sol\":{\"keccak256\":\"0xf65a57721ae28951dc862a92d20969aa19323cd51930daea42aed2cff0b30de4\",\"license\":\"Logan Hoots and Collin Stratton Project\",\"urls\":[\"bzz-raw://6d9a75e8002558b02702adc436f20e0781ee20da70f2c6325fc8aac999eea2f3\",\"dweb:/ipfs/QmfTdG4hAV8FUtBWAHNAsVratdGbij1HCBKKnBGcD6GyGF\"]}},\"version\":1}",
+  "bytecode": "0x608060405260008060006101000a81548163ffffffff021916908363ffffffff16021790555060008060046101000a81548163ffffffff021916908363ffffffff16021790555060008060086101000a81548163ffffffff021916908363ffffffff160217905550348015607257600080fd5b50603f8060806000396000f3fe6080604052600080fdfea2646970667358221220dbe5b6058ebc2e2894ee29f7c259d750a2aefcfa23cabc6a17f028fe167789e864736f6c634300080b0033",
+  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220dbe5b6058ebc2e2894ee29f7c259d750a2aefcfa23cabc6a17f028fe167789e864736f6c634300080b0033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "128:592:1:-:0;;;170:1;154:17;;;;;;;;;;;;;;;;;;;;195:1;178:18;;;;;;;;;;;;;;;;;;;;215:1;203:13;;;;;;;;;;;;;;;;;;;;128:592;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "128:592:1:-:0;;;;;",
+  "source": "// SPDX-License-Identifier: Logan Hoots and Collin Stratton Project\r\npragma solidity >=0.4.22 <0.9.0;\r\nimport \"./moves.sol\";\r\n\r\ncontract cryptomon {\r\n    uint32 attack = 0;\r\n    uint32 defense = 0;\r\n    uint32 hp = 0;\r\n    address owner;\r\n    moves[] attacks;\r\n\r\n    // constructor() {\r\n    //     attack = 0;\r\n    //     defense = 0;\r\n    //     hp = 0;\r\n    //     owner = 0xCf25e0b242190Bb53B58E8FD7e99a05e97CbBd9E;\r\n    //     attacks = []\r\n    // }\r\n\r\n    // constructor(uint32 attack_, uint32 defense_, uint32 hp_, address owner_, moves[] memory attacks_) {\r\n    //     attack = attack_;\r\n    //     defense = defense_;\r\n    //     hp = hp_;\r\n    //     owner = owner_;\r\n    //     attacks = attacks_;\r\n    // }\r\n}",
+  "sourcePath": "D:\\Collins_CST-461\\Cryptomon\\contracts\\cryptomon.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/cryptomon.sol",
+    "exportedSymbols": {
+      "cryptomon": [
+        51
+      ],
+      "move": [
+        88
+      ],
+      "moves": [
+        118
+      ]
+    },
+    "id": 52,
+    "license": "Logan Hoots and Collin Stratton Project",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 34,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "69:32:1"
+      },
+      {
+        "absolutePath": "project:/contracts/moves.sol",
+        "file": "./moves.sol",
+        "id": 35,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 52,
+        "sourceUnit": 119,
+        "src": "103:21:1",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "cryptomon",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 51,
+        "linearizedBaseContracts": [
+          51
+        ],
+        "name": "cryptomon",
+        "nameLocation": "137:9:1",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 38,
+            "mutability": "mutable",
+            "name": "attack",
+            "nameLocation": "161:6:1",
+            "nodeType": "VariableDeclaration",
+            "scope": 51,
+            "src": "154:17:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint32",
+              "typeString": "uint32"
+            },
+            "typeName": {
+              "id": 36,
+              "name": "uint32",
+              "nodeType": "ElementaryTypeName",
+              "src": "154:6:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint32",
+                "typeString": "uint32"
+              }
+            },
+            "value": {
+              "hexValue": "30",
+              "id": 37,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "170:1:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_0_by_1",
+                "typeString": "int_const 0"
+              },
+              "value": "0"
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 41,
+            "mutability": "mutable",
+            "name": "defense",
+            "nameLocation": "185:7:1",
+            "nodeType": "VariableDeclaration",
+            "scope": 51,
+            "src": "178:18:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint32",
+              "typeString": "uint32"
+            },
+            "typeName": {
+              "id": 39,
+              "name": "uint32",
+              "nodeType": "ElementaryTypeName",
+              "src": "178:6:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint32",
+                "typeString": "uint32"
+              }
+            },
+            "value": {
+              "hexValue": "30",
+              "id": 40,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "195:1:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_0_by_1",
+                "typeString": "int_const 0"
+              },
+              "value": "0"
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 44,
+            "mutability": "mutable",
+            "name": "hp",
+            "nameLocation": "210:2:1",
+            "nodeType": "VariableDeclaration",
+            "scope": 51,
+            "src": "203:13:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint32",
+              "typeString": "uint32"
+            },
+            "typeName": {
+              "id": 42,
+              "name": "uint32",
+              "nodeType": "ElementaryTypeName",
+              "src": "203:6:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint32",
+                "typeString": "uint32"
+              }
+            },
+            "value": {
+              "hexValue": "30",
+              "id": 43,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "215:1:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_0_by_1",
+                "typeString": "int_const 0"
+              },
+              "value": "0"
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 46,
+            "mutability": "mutable",
+            "name": "owner",
+            "nameLocation": "231:5:1",
+            "nodeType": "VariableDeclaration",
+            "scope": 51,
+            "src": "223:13:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 45,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "223:7:1",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 50,
+            "mutability": "mutable",
+            "name": "attacks",
+            "nameLocation": "251:7:1",
+            "nodeType": "VariableDeclaration",
+            "scope": 51,
+            "src": "243:15:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_contract$_moves_$118_$dyn_storage",
+              "typeString": "contract moves[]"
+            },
+            "typeName": {
+              "baseType": {
+                "id": 48,
+                "nodeType": "UserDefinedTypeName",
+                "pathNode": {
+                  "id": 47,
+                  "name": "moves",
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 118,
+                  "src": "243:5:1"
+                },
+                "referencedDeclaration": 118,
+                "src": "243:5:1",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_contract$_moves_$118",
+                  "typeString": "contract moves"
+                }
+              },
+              "id": 49,
+              "nodeType": "ArrayTypeName",
+              "src": "243:7:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_contract$_moves_$118_$dyn_storage_ptr",
+                "typeString": "contract moves[]"
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "scope": 52,
+        "src": "128:592:1",
+        "usedErrors": []
+      }
+    ],
+    "src": "69:651:1"
+  },
+  "legacyAST": {
+    "absolutePath": "project:/contracts/cryptomon.sol",
+    "exportedSymbols": {
+      "cryptomon": [
+        51
+      ],
+      "move": [
+        88
+      ],
+      "moves": [
+        118
+      ]
+    },
+    "id": 52,
+    "license": "Logan Hoots and Collin Stratton Project",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 34,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "69:32:1"
+      },
+      {
+        "absolutePath": "project:/contracts/moves.sol",
+        "file": "./moves.sol",
+        "id": 35,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 52,
+        "sourceUnit": 119,
+        "src": "103:21:1",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "cryptomon",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 51,
+        "linearizedBaseContracts": [
+          51
+        ],
+        "name": "cryptomon",
+        "nameLocation": "137:9:1",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 38,
+            "mutability": "mutable",
+            "name": "attack",
+            "nameLocation": "161:6:1",
+            "nodeType": "VariableDeclaration",
+            "scope": 51,
+            "src": "154:17:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint32",
+              "typeString": "uint32"
+            },
+            "typeName": {
+              "id": 36,
+              "name": "uint32",
+              "nodeType": "ElementaryTypeName",
+              "src": "154:6:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint32",
+                "typeString": "uint32"
+              }
+            },
+            "value": {
+              "hexValue": "30",
+              "id": 37,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "170:1:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_0_by_1",
+                "typeString": "int_const 0"
+              },
+              "value": "0"
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 41,
+            "mutability": "mutable",
+            "name": "defense",
+            "nameLocation": "185:7:1",
+            "nodeType": "VariableDeclaration",
+            "scope": 51,
+            "src": "178:18:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint32",
+              "typeString": "uint32"
+            },
+            "typeName": {
+              "id": 39,
+              "name": "uint32",
+              "nodeType": "ElementaryTypeName",
+              "src": "178:6:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint32",
+                "typeString": "uint32"
+              }
+            },
+            "value": {
+              "hexValue": "30",
+              "id": 40,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "195:1:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_0_by_1",
+                "typeString": "int_const 0"
+              },
+              "value": "0"
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 44,
+            "mutability": "mutable",
+            "name": "hp",
+            "nameLocation": "210:2:1",
+            "nodeType": "VariableDeclaration",
+            "scope": 51,
+            "src": "203:13:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint32",
+              "typeString": "uint32"
+            },
+            "typeName": {
+              "id": 42,
+              "name": "uint32",
+              "nodeType": "ElementaryTypeName",
+              "src": "203:6:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint32",
+                "typeString": "uint32"
+              }
+            },
+            "value": {
+              "hexValue": "30",
+              "id": 43,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "215:1:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_0_by_1",
+                "typeString": "int_const 0"
+              },
+              "value": "0"
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 46,
+            "mutability": "mutable",
+            "name": "owner",
+            "nameLocation": "231:5:1",
+            "nodeType": "VariableDeclaration",
+            "scope": 51,
+            "src": "223:13:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 45,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "223:7:1",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 50,
+            "mutability": "mutable",
+            "name": "attacks",
+            "nameLocation": "251:7:1",
+            "nodeType": "VariableDeclaration",
+            "scope": 51,
+            "src": "243:15:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_contract$_moves_$118_$dyn_storage",
+              "typeString": "contract moves[]"
+            },
+            "typeName": {
+              "baseType": {
+                "id": 48,
+                "nodeType": "UserDefinedTypeName",
+                "pathNode": {
+                  "id": 47,
+                  "name": "moves",
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 118,
+                  "src": "243:5:1"
+                },
+                "referencedDeclaration": 118,
+                "src": "243:5:1",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_contract$_moves_$118",
+                  "typeString": "contract moves"
+                }
+              },
+              "id": 49,
+              "nodeType": "ArrayTypeName",
+              "src": "243:7:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_contract$_moves_$118_$dyn_storage_ptr",
+                "typeString": "contract moves[]"
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "scope": 52,
+        "src": "128:592:1",
+        "usedErrors": []
+      }
+    ],
+    "src": "69:651:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.11+commit.d7f03943.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0xd9Ed6dFd51999bCD76AFBA678057B89Fe3F8C02e",
+      "transactionHash": "0x1ce0a4273b6fd08052b1a4e6ed818006162ab2c5e54f3f2b5fb5d11db56d4871"
+    }
+  },
+  "schemaVersion": "3.4.4",
+  "updatedAt": "2022-03-25T18:51:16.337Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

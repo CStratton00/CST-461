@@ -11,7 +11,7 @@ module.exports = {
    * $ truffle test --network <network-name>
    */
 
-   defaultNetwork: "ropsten",
+   //defaultNetwork: "ropsten",
 
   networks: {
     ropsten: {
