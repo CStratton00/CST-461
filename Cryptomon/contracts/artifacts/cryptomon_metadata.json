@@ -1,0 +1,112 @@
+{
+	"compiler": {
+		"version": "0.8.6+commit.11564f7e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "contract move",
+						"name": "m_",
+						"type": "address"
+					}
+				],
+				"name": "addMove",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "i",
+						"type": "uint256"
+					}
+				],
+				"name": "getAttack",
+				"outputs": [
+					{
+						"internalType": "contract move",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getNumAttacks",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Cryptomon/contracts/cryptomon.sol": "cryptomon"
+		},
+		"evmVersion": "berlin",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Cryptomon/contracts/cryptomon.sol": {
+			"keccak256": "0x122a3fa6c59ccc60f7aaadf4318d8eaf1ad96a982e898658b6039b60b110b64f",
+			"license": "Logan Hoots and Collin Stratton Project",
+			"urls": [
+				"bzz-raw://95c6b07a30ca3cf39d34dfd0b9c91036097dba8c52a64e90bc7079510c2cbf22",
+				"dweb:/ipfs/QmTvAcNCXw8p78gEHjtK9cwBQ12ay77uMdAf8HpbM7mMz4"
+			]
+		},
+		"Cryptomon/contracts/move.sol": {
+			"keccak256": "0xc4d4d9ddf33ef828c4910c76114a0f692ceb6e553ee186f23f789eebce41b7a4",
+			"license": "Logan Hoots and Collin Stratton Project",
+			"urls": [
+				"bzz-raw://9796fd78362433738a2106db318bc8b8b7a1063c209d8a2cc697b8b1c1bdfdb8",
+				"dweb:/ipfs/QmQCWWpRP4k5gnoKYdnJBPkgrbvCZX988y8kKozJ8KmnQ2"
+			]
+		},
+		"Cryptomon/contracts/moves.sol": {
+			"keccak256": "0x00fcdb0d890f393c4314c11c6706c47c5c62ff3a19920b053ce3c8ddf25cf395",
+			"license": "Logan Hoots and Collin Stratton Project",
+			"urls": [
+				"bzz-raw://6fa3c96bbe0152100df5c518787df0029833547160b40640ad603256ffdab62d",
+				"dweb:/ipfs/QmZetbCYyove7ALQeawLQNQsBmmbqB9FgSm8S7eSt2W8aL"
+			]
+		}
+	},
+	"version": 1
+}
