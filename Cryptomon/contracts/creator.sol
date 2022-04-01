@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: Logan Hoots and Collin Stratton Project
 pragma solidity >=0.4.22 <0.9.0;
 import "./cryptomon.sol";
-import "./move.sol";
+//import "./move.sol";
 
 // create contract that creates cryptomons and moves
 contract creator {
@@ -11,8 +11,8 @@ contract creator {
     move[] movesList;
     
     // create cryptomon and add it to a list of cryptomon
-    function createCryptomon(string memory name, uint32 attack, uint32 defense, uint32 hp, address owner/*, moves[] memory attacks*/) public returns (cryptomon c) {
-        c = new cryptomon(name, attack, defense, hp, owner/*, attacks*/);
+    function createCryptomon(string memory name, uint32 attack, uint32 defense, uint32 hp, address owner) public returns (cryptomon c) {
+        c = new cryptomon(name, attack, defense, hp, owner);
         cryptomonList.push(c);
     }
     
@@ -23,8 +23,7 @@ contract creator {
     }
 
     // add additional moves to cryptomon
-    function addMove(cryptomon cryptomon_, move move_) public returns (move[] memory m) {
-        //m = cryptomon_.attacks;
-        cryptomon_.attacks.push(move_);
+    function addMove(cryptomon cryptomon_, move move_) public {
+        cryptomon_.addMove(move_);
     }
 }

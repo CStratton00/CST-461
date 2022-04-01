@@ -11,5 +11,4 @@ contract move {
         damage = damage_;
         name = name_;
     }
-    //function createMove(move m_) public pure returns (move m) { m = m_; }
 }
