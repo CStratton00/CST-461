@@ -1,7 +1,6 @@
 // SPDX-License-Identifier: Logan Hoots and Collin Stratton Project
 pragma solidity >=0.4.22 <0.9.0;
 import "./cryptomon.sol";
-//import "./move.sol";
 
 // create contract that creates cryptomons and moves
 contract creator {

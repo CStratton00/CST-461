@@ -10,12 +10,14 @@ const creator = artifacts.require("./creator.sol");
 
 contract('cryptomon', async accounts => {
   it("should assert true", async () => {
-    //let instance = await cryptomon.deployed();
+    let instance = await cryptomon.deployed();
     let creator_ = await creator.deployed();
     //let move = await move.deployed();
 
     // create cryptomon
-    let c = await creator_.createCryptomon("Citromon", 2, 2, 2, "0x1D6C19E8E9d7aD85876B2943108D8472De5719E3");
+    // functino is not returning c correctly
+    let c = await creator_.createCryptomon("Citromon", 2, 2, 2, "0xb533568585A5bd3CbEBDF8982e6d9586aAb0c68F");
+    //let c = await instance.constructor("0xb533568585A5bd3CbEBDF8982e6d9586aAb0c68F", "Citromon", 2, 2, 2, '0xb533568585A5bd3CbEBDF8982e6d9586aAb0c68F');
 
     // create and add moves
     // let tempMove = creator_.createMove(69, "The Lick");
@@ -23,8 +25,8 @@ contract('cryptomon', async accounts => {
     // tempMove = creator_.createMove(420, "Suckle");
     // temp = creator_.addMove(c, tempMove);
 
-    //c.printName();
+    console.log(c.printName());
 
-    //assert.equal(c.name, "Citromon");
+    //assert.equal(c.name, "citromon");
   });
 });
