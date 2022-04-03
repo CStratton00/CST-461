@@ -18,9 +18,7 @@ contract cryptomon {
         owner = owner_;
     }
 
-    function addMove(move m) public {
-        attacks.push(m);
-    }
+    function addMove(move m) public { attacks.push(m); }
 
     function printName() public view returns (string memory name_) { name_= name; }
 }

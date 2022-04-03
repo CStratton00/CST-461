@@ -1,0 +1,143 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "contract cryptomon",
+						"name": "cryptomon_",
+						"type": "address"
+					},
+					{
+						"internalType": "contract move",
+						"name": "move_",
+						"type": "address"
+					}
+				],
+				"name": "addMove",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint32",
+						"name": "attack",
+						"type": "uint32"
+					},
+					{
+						"internalType": "uint32",
+						"name": "defense",
+						"type": "uint32"
+					},
+					{
+						"internalType": "uint32",
+						"name": "hp",
+						"type": "uint32"
+					},
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					}
+				],
+				"name": "createCryptomon",
+				"outputs": [
+					{
+						"internalType": "contract cryptomon",
+						"name": "c",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint32",
+						"name": "damage",
+						"type": "uint32"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					}
+				],
+				"name": "createMove",
+				"outputs": [
+					{
+						"internalType": "contract move",
+						"name": "m",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/creator.sol": "creator"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/creator.sol": {
+			"keccak256": "0xce063af19029d29a0b66f365a3f78435faa5cc08b30db61032f64cae3872559c",
+			"license": "Logan Hoots and Collin Stratton Project",
+			"urls": [
+				"bzz-raw://f0f70636576b064ad3a3e45653d1e81e6872f8b45198d8f111f307fd8013b49b",
+				"dweb:/ipfs/Qma6uaFPdFNq7VRjYqLTnwTDwZct6vaexa5zW63K4q71Zj"
+			]
+		},
+		"contracts/cryptomon.sol": {
+			"keccak256": "0x27f98817f4d1b3bb99442fe9d5e70a6f211cba196f161478538fad6dece2174b",
+			"license": "Logan Hoots and Collin Stratton Project",
+			"urls": [
+				"bzz-raw://0d8a67eabe32ca061d61585bcb90673c6d5606d0bed0b6c248563b89029f745f",
+				"dweb:/ipfs/QmVcH8KkvxwSXVKXgPQDjj3mhw7ZagEbEJJntxhfyHoDr5"
+			]
+		},
+		"contracts/move.sol": {
+			"keccak256": "0x1c2466da14b5a189b67731c165f3aa8a117c9136845192bc2186f1935373faea",
+			"license": "Logan Hoots and Collin Stratton Project",
+			"urls": [
+				"bzz-raw://dc6b06401de5839920e06a2dcbd293f113696d31135268669e3a9ca4892c5ced",
+				"dweb:/ipfs/QmQP3mrvdpRoPPRh3zF6VMLi2RjGiuwmYN5NX2gkjiKD3P"
+			]
+		}
+	},
+	"version": 1
+}
