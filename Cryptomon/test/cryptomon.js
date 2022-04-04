@@ -65,15 +65,19 @@ contract('cryptomon', async accounts => {
     // deploy creator contract
     let instance = await creator.deployed();
 
-    // create first cryptomon with moves
+    // create first cryptomon with multiple moves
     let cryptomonID = await instance.createCryptomon("Citromon", 10, 10, 10);
     let moveID = await instance.createMove("The Lick", 10);
+    moveID = await instance.createMove("Suckle", 69);
     let temp = await instance.addMove(0, 0);
+    temp = await instance.addMove(0, 1);
 
-    // create second cryptomon with moves
+    // create second cryptomon with multiple moves
     let cryptomonID2 = await instance.createCryptomon("Citromon2", 10, 10, 10);
     let moveID2 = await instance.createMove("The Lick2", 10);
-    let temp2 = await instance.addMove(1, 1);
+    moveID2 = await instance.createMove("Suckle2", 69);
+    let temp2 = await instance.addMove(1, 2);
+    temp2 = await instance.addMove(1, 3);
 
     // get cryptomon from list
     let c = await instance.cryptomonList(0);
@@ -91,8 +95,10 @@ contract('cryptomon', async accounts => {
 
     // assert that the first cryptomon has the correct moves
     assert.equal(c[6][1], "The Lick");
+    assert.equal(c[7][1], "Suckle");
 
     // assert that the second cryptomon has the correct moves
     assert.equal(c2[6][1], "The Lick2");
+    assert.equal(c2[7][1], "Suckle2");
   })
 });
