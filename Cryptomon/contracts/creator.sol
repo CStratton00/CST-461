@@ -1,32 +1,50 @@
 // SPDX-License-Identifier: Logan Hoots and Collin Stratton Project
 pragma solidity >=0.4.22 <0.9.0;
-import "./cryptomon.sol";
 
 // create contract that creates cryptomons and moves
 contract creator {
-    // create list of cryptomon
-    cryptomon[] private cryptomonList;
-    // create list of moves
-    move[] movesList;
-    
-    // create cryptomon and add it to a list of cryptomon
-    function createCryptomon(string memory name, uint32 attack, uint32 defense, uint32 hp, address owner) public {
-        //cryptomon c = new cryptomon(name, attack, defense, hp, owner);
-        cryptomonList.push(new cryptomon(name, attack, defense, hp, owner));
-    }
-    
-    // create move
-    function createMove(uint32 damage, string memory name) public returns (move m) {
-        m = new move(uint32(uint256(movesList.length)), damage, name);
-        movesList.push(m);
+    uint32 move_id;
+    struct move {
+        uint32 id;
+        string name;
+        uint32 damage;
+    } mapping(uint32 => move) public movesList;
+
+    uint32 cryptomon_id;
+    struct cryptomon {
+        uint32 id;
+        string name;
+        uint32 attack;
+        uint32 defense;
+        uint32 hp;
+        address owner;
+        move move1;
+        move move2;
+    } mapping(uint32 => cryptomon) public cryptomonList;
+
+    function createCryptomon(string memory n, uint32 a, uint32 d, uint32 h) public returns (string memory) {
+        uint32 ID = cryptomon_id++;
+        cryptomonList[ID].id = ID;
+        cryptomonList[ID].name = n;
+        cryptomonList[ID].attack = a;
+        cryptomonList[ID].defense = d;
+        cryptomonList[ID].hp = h;
+        cryptomonList[ID].owner = msg.sender;
+        return string(abi.encodePacked(cryptomonList[ID].name, " created successfully!"));
     }
 
-    function asdf() public view returns (cryptomon[] memory) {
-        return cryptomonList;
+    function createMove(string memory n, uint32 d) public returns (string memory) {
+        uint32 ID = move_id++;
+        movesList[ID].id = ID;
+        movesList[ID].name = n;
+        movesList[ID].damage = d;
+        return string(abi.encodePacked(movesList[ID].name, " created successfully!"));
     }
 
-    // add additional moves to cryptomon
-    function addMove(cryptomon cryptomon_, move move_) public {
-        cryptomon_.addMove(move_);
+    function addMove(uint32 cID_, uint32 mID_) public returns (string memory) {
+        move memory m = move(movesList[mID_].id, movesList[mID_].name, movesList[mID_].damage);
+        if (bytes(cryptomonList[cID_].move1.name).length == 0) cryptomonList[cID_].move1 = m;
+        else if (bytes(cryptomonList[cID_].move2.name).length == 0) cryptomonList[cID_].move2 = m;
+        return string(abi.encodePacked(movesList[mID_].name, " added to ", cryptomonList[cID_].name, " successfully!"));
     }
 }
