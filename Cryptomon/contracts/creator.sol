@@ -47,4 +47,10 @@ contract creator {
         else if (bytes(cryptomonList[cID_].move2.name).length == 0) cryptomonList[cID_].move2 = m;
         return string(abi.encodePacked(movesList[mID_].name, " added to ", cryptomonList[cID_].name, " successfully!"));
     }
+
+    // function to update the owner of the cryptomon
+    function updateOwner(uint32 cID_, address newOwner_) public returns (string memory) {
+        cryptomonList[cID_].owner = newOwner_;
+        return string(abi.encodePacked(cryptomonList[cID_].name, " owner updated successfully!"));
+    }
 }

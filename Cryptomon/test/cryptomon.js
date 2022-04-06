@@ -100,5 +100,19 @@ contract('cryptomon', async accounts => {
     // assert that the second cryptomon has the correct moves
     assert.equal(c2[6][1], "The Lick2");
     assert.equal(c2[7][1], "Suckle2");
-  })
+  });
+
+  // it("should assert true", async () => {
+  //   let instance = await creator.deployed();
+
+  //   let cryptomonID = await instance.createCryptomon("Citromon", 10, 10, 10);
+  //   let cryptomonID2 = await instance.createCryptomon("Citromon2", 10, 10, 10);
+
+  //   let c = await instance.cryptomonList(0);
+  //   let c2 = await instance.cryptomonList(1);
+
+  //   let change = await instance.updateOwner(0, c2.owner);
+
+  //   assert.equal(c.owner, c2.owner);
+  // })
 });

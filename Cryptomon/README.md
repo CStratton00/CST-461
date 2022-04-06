@@ -16,4 +16,4 @@ CST-461 project to create a substantial project with the skills and knowledge le
 - [ ] Make battler interface
 - [ ] Determine turn order
 - [ ] Determine winner
-- [ ] Update blockchain with winner
+- [X] Update blockchain with winner
