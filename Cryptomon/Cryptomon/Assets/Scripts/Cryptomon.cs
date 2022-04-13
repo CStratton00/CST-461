@@ -12,15 +12,7 @@ public class Cryptomon : MonoBehaviour
     // Start is called before the first frame update
     void Start() {
         // Initialize variables from solidity
-        moves[0] = new move();
-        moves[1] = new move();
-    }
-}
-
-public class move {
-    public string moveName;
-    public int damage;
-    public move() {
-        //Initialize variables from solidity
+        // moves[0] = new move();
+        // moves[1] = new move();
     }
 }

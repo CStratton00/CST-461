@@ -138,6 +138,26 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1307994695}
+    - target: {fileID: 7854732055959844160, guid: bef778b03077a66428d09854d55bb8a3, type: 3}
+      propertyPath: hp
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 7854732055959844160, guid: bef778b03077a66428d09854d55bb8a3, type: 3}
+      propertyPath: speed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7854732055959844160, guid: bef778b03077a66428d09854d55bb8a3, type: 3}
+      propertyPath: cryptomonName
+      value: b
+      objectReference: {fileID: 0}
+    - target: {fileID: 7854732055959844160, guid: bef778b03077a66428d09854d55bb8a3, type: 3}
+      propertyPath: moves.Array.data[0]
+      value: 
+      objectReference: {fileID: 1405095510441299820, guid: 9a9fdb6557099d14d8515e49873681ba, type: 3}
+    - target: {fileID: 7854732055959844160, guid: bef778b03077a66428d09854d55bb8a3, type: 3}
+      propertyPath: moves.Array.data[1]
+      value: 
+      objectReference: {fileID: 1405095510441299820, guid: 9a9fdb6557099d14d8515e49873681ba, type: 3}
     - target: {fileID: 8514410005982385482, guid: bef778b03077a66428d09854d55bb8a3, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -411,7 +431,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33a8d4ead8f8dd549a53988c1f97cc76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crpytomonGameObjects: []
+  cards: []
   cList:
   - {fileID: 0}
   - {fileID: 0}
@@ -551,6 +571,26 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1307994695}
+    - target: {fileID: 7854732055959844160, guid: bef778b03077a66428d09854d55bb8a3, type: 3}
+      propertyPath: hp
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7854732055959844160, guid: bef778b03077a66428d09854d55bb8a3, type: 3}
+      propertyPath: speed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7854732055959844160, guid: bef778b03077a66428d09854d55bb8a3, type: 3}
+      propertyPath: cryptomonName
+      value: a
+      objectReference: {fileID: 0}
+    - target: {fileID: 7854732055959844160, guid: bef778b03077a66428d09854d55bb8a3, type: 3}
+      propertyPath: moves.Array.data[0]
+      value: 
+      objectReference: {fileID: 1405095510441299820, guid: 9a9fdb6557099d14d8515e49873681ba, type: 3}
+    - target: {fileID: 7854732055959844160, guid: bef778b03077a66428d09854d55bb8a3, type: 3}
+      propertyPath: moves.Array.data[1]
+      value: 
+      objectReference: {fileID: 1405095510441299820, guid: 9a9fdb6557099d14d8515e49873681ba, type: 3}
     - target: {fileID: 8514410005982385482, guid: bef778b03077a66428d09854d55bb8a3, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
