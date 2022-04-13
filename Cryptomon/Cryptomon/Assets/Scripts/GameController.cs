@@ -8,7 +8,6 @@ public class GameController : MonoBehaviour
     public GameObject[] cards;
     public Cryptomon[] cList;
     public int turn;
-    private bool turnTimer = false;
 
     // Start is called before the first frame update
     void Start() {
@@ -32,6 +31,10 @@ public class GameController : MonoBehaviour
         setTurn(turn);
     }
 
+    void Update() {
+        Debug.Log(turn + cList[0].hp.ToString() + cList[1].hp.ToString());
+    }
+
     private void setTurn(int turn) {
         for (int i = 0; i < cards.Length; i++) {
             cards[i].transform.Find("Move 1").gameObject.GetComponent<Button>().interactable = false;
@@ -41,55 +44,53 @@ public class GameController : MonoBehaviour
         cards[turn].transform.Find("Move 2").gameObject.GetComponent<Button>().interactable = true;
     }
 
-    void Update() {
-        if (turnTimer) {
-            float timeRemaining = 0.25f;
-            if (timeRemaining > 0) {
-                timeRemaining -= Time.deltaTime;
-            } else {
-                timeRemaining = 0f;
-                turnTimer = false;
-            }
-        }
+    public void move1() {
+        cards[turn].transform.Find("Move 1").gameObject.GetComponent<Button>().interactable = false;
+        cards[turn].transform.Find("Move 2").gameObject.GetComponent<Button>().interactable = false;    
+        StartCoroutine(handleMove1()); 
     }
 
-    public void move1() {
-        turnTimer = true;
-        //while (turnTimer) {}
+    private IEnumerator handleMove1() {
         for (int i = 0; i < cards[turn].GetComponent<Cryptomon>().moves[0].damage; i++) {
             if (turn == 0) cards[1].GetComponent<Cryptomon>().hp--;
             else cards[0].GetComponent<Cryptomon>().hp--;
+            yield return new WaitForSeconds(0.075f);
             cards[1].transform.Find("HP Text").gameObject.GetComponent<Text>().text = cards[1].GetComponent<Cryptomon>().hp.ToString();
             cards[0].transform.Find("HP Text").gameObject.GetComponent<Text>().text = cards[0].GetComponent<Cryptomon>().hp.ToString();
+            if (!areAllAlive()) gameOver();
         }
-        if (!areAllAlive()) gameOver();
         if (turn == 0) turn = 1;
         else turn = 0;
         setTurn(turn);
     }
 
     public void move2() {
-        turnTimer = true;
-        //while (turnTimer) {}
+        cards[turn].transform.Find("Move 1").gameObject.GetComponent<Button>().interactable = false;
+        cards[turn].transform.Find("Move 2").gameObject.GetComponent<Button>().interactable = false;    
+        StartCoroutine(handleMove2()); 
+    }
+
+    private IEnumerator handleMove2() {
         for (int i = 0; i < cards[turn].GetComponent<Cryptomon>().moves[1].damage; i++) {
             if (turn == 0) cards[1].GetComponent<Cryptomon>().hp--;
             else cards[0].GetComponent<Cryptomon>().hp--;
+            yield return new WaitForSeconds(0.075f);
             cards[1].transform.Find("HP Text").gameObject.GetComponent<Text>().text = cards[1].GetComponent<Cryptomon>().hp.ToString();
             cards[0].transform.Find("HP Text").gameObject.GetComponent<Text>().text = cards[0].GetComponent<Cryptomon>().hp.ToString();
+            if (!areAllAlive()) gameOver();
         }
-        if (!areAllAlive()) gameOver();
         if (turn == 0) turn = 1;
         else turn = 0;
         setTurn(turn);
     }
 
     private void gameOver() {
-
+        
     }
 
     private bool areAllAlive() {
         for (int i = 0; i < cList.Length; i++)
-            if (cList[i].hp >= 0) return false;
+            if (cList[i].hp <= 0) return false;
         return true;
     }
 }

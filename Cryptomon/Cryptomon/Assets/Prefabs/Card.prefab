@@ -469,6 +469,9 @@ MonoBehaviour:
   cryptomonName: 
   hp: 0
   speed: 0
+  moves:
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &8514410006053131003
 GameObject:
   m_ObjectHideFlags: 0
