@@ -7,7 +7,7 @@ public class Cryptomon : MonoBehaviour
     public string cryptomonName = "";
     public int hp = 0;
     public int speed = 0;
-    public move[] moves;
+    public move[] moves = new move[2];
 
     // Start is called before the first frame update
     void Start() {
