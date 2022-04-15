@@ -38,6 +38,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Nethereum.Contracts": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
             "Nethereum.Web3": {
               "target": "Package",
               "version": "[4.2.0, )"
