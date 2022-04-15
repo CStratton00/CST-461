@@ -8,6 +8,7 @@ contract creator {
         uint32 id;
         string name;
         uint32 damage;
+        uint32 missRate;
     } mapping(uint32 => move) public movesList;
 
     uint32 cryptomon_id;
@@ -33,16 +34,17 @@ contract creator {
         return string(abi.encodePacked(cryptomonList[ID].name, " created successfully!"));
     }
 
-    function createMove(string memory n, uint32 d) public returns (string memory) {
+    function createMove(string memory n, uint32 d, uint32 m) public returns (string memory) {
         uint32 ID = move_id++;
         movesList[ID].id = ID;
         movesList[ID].name = n;
         movesList[ID].damage = d;
+        movesList[ID].missRate = m;
         return string(abi.encodePacked(movesList[ID].name, " created successfully!"));
     }
 
     function addMove(uint32 cID_, uint32 mID_) public returns (string memory) {
-        move memory m = move(movesList[mID_].id, movesList[mID_].name, movesList[mID_].damage);
+        move memory m = move(movesList[mID_].id, movesList[mID_].name, movesList[mID_].damage, movesList[mID_].missRate);
         if (bytes(cryptomonList[cID_].move1.name).length == 0) cryptomonList[cID_].move1 = m;
         else if (bytes(cryptomonList[cID_].move2.name).length == 0) cryptomonList[cID_].move2 = m;
         return string(abi.encodePacked(movesList[mID_].name, " added to ", cryptomonList[cID_].name, " successfully!"));

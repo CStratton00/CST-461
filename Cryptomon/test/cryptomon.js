@@ -67,15 +67,15 @@ contract('cryptomon', async accounts => {
 
     // create first cryptomon with multiple moves
     let cryptomonID = await instance.createCryptomon("Citromon", 10, 10, 10);
-    let moveID = await instance.createMove("The Lick", 10);
-    moveID = await instance.createMove("Suckle", 69);
+    let moveID = await instance.createMove("The Lick", 10, 80);
+    moveID = await instance.createMove("Suckle", 69, 30);
     let temp = await instance.addMove(0, 0);
     temp = await instance.addMove(0, 1);
 
     // create second cryptomon with multiple moves
     let cryptomonID2 = await instance.createCryptomon("Citromon2", 10, 10, 10);
-    let moveID2 = await instance.createMove("The Lick2", 10);
-    moveID2 = await instance.createMove("Suckle2", 69);
+    let moveID2 = await instance.createMove("The Lick2", 10, 80);
+    moveID2 = await instance.createMove("Suckle2", 69, 30);
     let temp2 = await instance.addMove(1, 2);
     temp2 = await instance.addMove(1, 3);
 
