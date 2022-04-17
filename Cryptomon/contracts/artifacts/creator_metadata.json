@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.7+commit.e28d00a7"
+		"version": "0.8.6+commit.11564f7e"
 	},
 	"language": "Solidity",
 	"output": {
@@ -8,23 +8,105 @@
 			{
 				"inputs": [
 					{
-						"internalType": "contract cryptomon",
-						"name": "cryptomon_",
-						"type": "address"
+						"internalType": "uint32",
+						"name": "cID_",
+						"type": "uint32"
 					},
 					{
-						"internalType": "contract move",
-						"name": "move_",
-						"type": "address"
+						"internalType": "uint32",
+						"name": "mID_",
+						"type": "uint32"
 					}
 				],
 				"name": "addMove",
-				"outputs": [],
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [
+					{
+						"internalType": "string",
+						"name": "n",
+						"type": "string"
+					},
+					{
+						"internalType": "uint32",
+						"name": "a",
+						"type": "uint32"
+					},
+					{
+						"internalType": "uint32",
+						"name": "d",
+						"type": "uint32"
+					},
+					{
+						"internalType": "uint32",
+						"name": "h",
+						"type": "uint32"
+					}
+				],
+				"name": "createCryptomon",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "n",
+						"type": "string"
+					},
+					{
+						"internalType": "uint32",
+						"name": "d",
+						"type": "uint32"
+					},
+					{
+						"internalType": "uint32",
+						"name": "m",
+						"type": "uint32"
+					}
+				],
+				"name": "createMove",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint32",
+						"name": "",
+						"type": "uint32"
+					}
+				],
+				"name": "cryptomonList",
+				"outputs": [
+					{
+						"internalType": "uint32",
+						"name": "id",
+						"type": "uint32"
+					},
 					{
 						"internalType": "string",
 						"name": "name",
@@ -49,38 +131,131 @@
 						"internalType": "address",
 						"name": "owner",
 						"type": "address"
+					},
+					{
+						"components": [
+							{
+								"internalType": "uint32",
+								"name": "id",
+								"type": "uint32"
+							},
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "uint32",
+								"name": "damage",
+								"type": "uint32"
+							},
+							{
+								"internalType": "uint32",
+								"name": "missRate",
+								"type": "uint32"
+							}
+						],
+						"internalType": "struct creator.move",
+						"name": "move1",
+						"type": "tuple"
+					},
+					{
+						"components": [
+							{
+								"internalType": "uint32",
+								"name": "id",
+								"type": "uint32"
+							},
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "uint32",
+								"name": "damage",
+								"type": "uint32"
+							},
+							{
+								"internalType": "uint32",
+								"name": "missRate",
+								"type": "uint32"
+							}
+						],
+						"internalType": "struct creator.move",
+						"name": "move2",
+						"type": "tuple"
 					}
 				],
-				"name": "createCryptomon",
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getCryptomonListLength",
 				"outputs": [
 					{
-						"internalType": "contract cryptomon",
-						"name": "c",
-						"type": "address"
+						"internalType": "uint32",
+						"name": "",
+						"type": "uint32"
 					}
 				],
-				"stateMutability": "nonpayable",
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
 				"inputs": [
 					{
 						"internalType": "uint32",
-						"name": "damage",
+						"name": "",
+						"type": "uint32"
+					}
+				],
+				"name": "movesList",
+				"outputs": [
+					{
+						"internalType": "uint32",
+						"name": "id",
 						"type": "uint32"
 					},
 					{
 						"internalType": "string",
 						"name": "name",
 						"type": "string"
+					},
+					{
+						"internalType": "uint32",
+						"name": "damage",
+						"type": "uint32"
+					},
+					{
+						"internalType": "uint32",
+						"name": "missRate",
+						"type": "uint32"
 					}
 				],
-				"name": "createMove",
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint32",
+						"name": "cID_",
+						"type": "uint32"
+					},
+					{
+						"internalType": "address",
+						"name": "newOwner_",
+						"type": "address"
+					}
+				],
+				"name": "updateOwner",
 				"outputs": [
 					{
-						"internalType": "contract move",
-						"name": "m",
-						"type": "address"
+						"internalType": "string",
+						"name": "",
+						"type": "string"
 					}
 				],
 				"stateMutability": "nonpayable",
@@ -102,7 +277,7 @@
 		"compilationTarget": {
 			"contracts/creator.sol": "creator"
 		},
-		"evmVersion": "london",
+		"evmVersion": "berlin",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -115,27 +290,11 @@
 	},
 	"sources": {
 		"contracts/creator.sol": {
-			"keccak256": "0xce063af19029d29a0b66f365a3f78435faa5cc08b30db61032f64cae3872559c",
+			"keccak256": "0x22994f62d43228b936db218edfa872f6e5abaee53dffb140374ef8f3a8cf9b66",
 			"license": "Logan Hoots and Collin Stratton Project",
 			"urls": [
-				"bzz-raw://f0f70636576b064ad3a3e45653d1e81e6872f8b45198d8f111f307fd8013b49b",
-				"dweb:/ipfs/Qma6uaFPdFNq7VRjYqLTnwTDwZct6vaexa5zW63K4q71Zj"
-			]
-		},
-		"contracts/cryptomon.sol": {
-			"keccak256": "0x27f98817f4d1b3bb99442fe9d5e70a6f211cba196f161478538fad6dece2174b",
-			"license": "Logan Hoots and Collin Stratton Project",
-			"urls": [
-				"bzz-raw://0d8a67eabe32ca061d61585bcb90673c6d5606d0bed0b6c248563b89029f745f",
-				"dweb:/ipfs/QmVcH8KkvxwSXVKXgPQDjj3mhw7ZagEbEJJntxhfyHoDr5"
-			]
-		},
-		"contracts/move.sol": {
-			"keccak256": "0x1c2466da14b5a189b67731c165f3aa8a117c9136845192bc2186f1935373faea",
-			"license": "Logan Hoots and Collin Stratton Project",
-			"urls": [
-				"bzz-raw://dc6b06401de5839920e06a2dcbd293f113696d31135268669e3a9ca4892c5ced",
-				"dweb:/ipfs/QmQP3mrvdpRoPPRh3zF6VMLi2RjGiuwmYN5NX2gkjiKD3P"
+				"bzz-raw://b8662af383d64b63d37a6671b52dfd22adc5282cc41c8b324d253ee93c94881c",
+				"dweb:/ipfs/QmY5cSdY6m3xxX3V5dVpWiNMx7jVzkQMS4Q1LLotsDmqYB"
 			]
 		}
 	},

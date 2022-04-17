@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: Logan Hoots and Collin Stratton Project
 pragma solidity >=0.4.22 <0.9.0;
 
+
 // create contract that creates cryptomons and moves
 contract creator {
     uint32 move_id;
@@ -54,5 +55,10 @@ contract creator {
     function updateOwner(uint32 cID_, address newOwner_) public returns (string memory) {
         cryptomonList[cID_].owner = newOwner_;
         return string(abi.encodePacked(cryptomonList[cID_].name, " owner updated successfully!"));
+    }
+
+    // function to return cryptomon from cryptomon list by id as string
+    function ToString(uint32 cID_) public view returns (string memory s) {
+        s = string(abi.encodePacked("name: "));
     }
 }
