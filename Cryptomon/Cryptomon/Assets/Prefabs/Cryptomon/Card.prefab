@@ -67,10 +67,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 652f7165b7c30ab46af6c4aad90a639b, type: 2}
-    m_FontSize: 40
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 4
+    m_MinSize: 3
     m_MaxSize: 92
     m_Alignment: 5
     m_AlignByGeometry: 0
@@ -146,10 +146,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 652f7165b7c30ab46af6c4aad90a639b, type: 2}
-    m_FontSize: 40
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 4
+    m_MinSize: 3
     m_MaxSize: 92
     m_Alignment: 5
     m_AlignByGeometry: 0
@@ -225,10 +225,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 652f7165b7c30ab46af6c4aad90a639b, type: 2}
-    m_FontSize: 40
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 4
+    m_MinSize: 3
     m_MaxSize: 92
     m_Alignment: 5
     m_AlignByGeometry: 0
@@ -597,10 +597,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 652f7165b7c30ab46af6c4aad90a639b, type: 2}
-    m_FontSize: 40
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 4
+    m_MinSize: 3
     m_MaxSize: 92
     m_Alignment: 5
     m_AlignByGeometry: 0
@@ -867,11 +867,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cryptomonName: 
-  hp: 0
+  hp: 150
   speed: 0
+  owner: 
   moves:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 7984182770459554907, guid: 7001c5b8e4609f347b277d1fa75da696, type: 3}
+  - {fileID: 7984182770459554907, guid: 7001c5b8e4609f347b277d1fa75da696, type: 3}
 --- !u!1 &8514410006053131003
 GameObject:
   m_ObjectHideFlags: 0

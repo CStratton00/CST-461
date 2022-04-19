@@ -15,11 +15,11 @@ D:/Collins_CST-461/Cryptomon/Cryptomon
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-30199
+1074
 Successfully changed project path to: D:/Collins_CST-461/Cryptomon/Cryptomon
 D:/Collins_CST-461/Cryptomon/Cryptomon
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 42.67 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 42.94 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.22f1 (e1a7f79fd887)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Resources/UnitySubsystems
@@ -35,41 +35,41 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56412
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56752
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003149 seconds.
+Registered in 0.003193 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 44.46 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 41.33 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.331 seconds
+- Completed reload, in  1.333 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1331ms)
-		BeginReloadAssembly (56ms)
+	ReloadAssembly (1334ms)
+		BeginReloadAssembly (57ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (441ms)
-			LoadAssemblies (55ms)
+		EndReloadAssembly (444ms)
+			LoadAssemblies (56ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (144ms)
+			SetupTypeCache (151ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (32ms)
+			RebuildScriptCaches (30ms)
 			SetupLoadedEditorAssemblies (165ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (45ms)
-				BeforeProcessingInitializeOnLoad (13ms)
-				ProcessInitializeOnLoadAttributes (76ms)
+				RefreshPlugins (41ms)
+				BeforeProcessingInitializeOnLoad (12ms)
+				ProcessInitializeOnLoadAttributes (80ms)
 				ProcessInitializeOnLoadMethodAttributes (26ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
@@ -77,32 +77,32 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.005301 seconds.
+Registered in 0.005766 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 40.62 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 40.50 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.231 seconds
+- Completed reload, in  1.075 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1232ms)
-		BeginReloadAssembly (141ms)
+	ReloadAssembly (1076ms)
+		BeginReloadAssembly (145ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (17ms)
-		EndReloadAssembly (1028ms)
-			LoadAssemblies (102ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (871ms)
+			LoadAssemblies (92ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (387ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (60ms)
-			SetupLoadedEditorAssemblies (323ms)
+			SetupTypeCache (300ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (44ms)
+			SetupLoadedEditorAssemblies (321ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (41ms)
 				BeforeProcessingInitializeOnLoad (72ms)
@@ -116,14 +116,14 @@ Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.43 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.44 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2200 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 96.1 MB.
 System memory in use after: 96.1 MB.
 
 Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 2629.
-Total: 3.096800 ms (FindLiveObjects: 0.203700 ms CreateObjectMapping: 0.069400 ms MarkObjects: 2.694100 ms  DeleteObjects: 0.128700 ms)
+Total: 3.091800 ms (FindLiveObjects: 0.212700 ms CreateObjectMapping: 0.074400 ms MarkObjects: 2.682000 ms  DeleteObjects: 0.121800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -138,136 +138,89 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Prefabs/Card.prefab
-  artifactKey: Guid(bef778b03077a66428d09854d55bb8a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Card.prefab using Guid(bef778b03077a66428d09854d55bb8a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.059491 seconds  code(4) message(Build asset version error: assets/prefabs/card.prefab in SourceAssetDB has modification time of '2022-04-13T21:38:40.7860182Z' while content on disk has modification time of '2022-04-13T21:38:45.5100509Z')
-  ERROR: Build asset version error: assets/prefabs/card.prefab in SourceAssetDB has modification time of '2022-04-13T21:38:40.7860182Z' while content on disk has modification time of '2022-04-13T21:38:45.5100509Z'
-  Import took 0.062498 seconds .
+  path: Assets/Prefabs/Cryptomon/Citromon_card.prefab
+  artifactKey: Guid(c5464422f6894194799df24411f49280) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cryptomon/Citromon_card.prefab using Guid(c5464422f6894194799df24411f49280) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70e77eda68e7287c0bfd154ce32f5260') in 0.064049 seconds 
+  Import took 0.067408 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.043626 seconds.
-  path: Assets/Prefabs/Card.prefab
-  artifactKey: Guid(bef778b03077a66428d09854d55bb8a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Card.prefab using Guid(bef778b03077a66428d09854d55bb8a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d519f42dd02e8fbb64f2da409e80d43') in 0.010057 seconds 
-  Import took 0.013545 seconds .
+  Time since last request: 17.802773 seconds.
+  path: Assets/Prefabs/Cryptomon/Citromon_card.prefab
+  artifactKey: Guid(c5464422f6894194799df24411f49280) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cryptomon/Citromon_card.prefab using Guid(c5464422f6894194799df24411f49280) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc52819c0973ac113d9a10ed6979c016') in 0.015745 seconds 
+  Import took 0.020087 seconds .
 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005439 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.972 seconds
-Domain Reload Profiling:
-	ReloadAssembly (973ms)
-		BeginReloadAssembly (120ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (32ms)
-		EndReloadAssembly (774ms)
-			LoadAssemblies (92ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (277ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (40ms)
-			SetupLoadedEditorAssemblies (276ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (88ms)
-				ProcessInitializeOnLoadAttributes (164ms)
-				ProcessInitializeOnLoadMethodAttributes (10ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2195 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 96.1 MB.
-System memory in use after: 96.1 MB.
+Received Import Request.
+  Time since last request: 6.403014 seconds.
+  path: Assets/Prefabs/Cryptomon/Citromon_card.prefab
+  artifactKey: Guid(c5464422f6894194799df24411f49280) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cryptomon/Citromon_card.prefab using Guid(c5464422f6894194799df24411f49280) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a10d6446a15aa2ab5e59c0e0437d513e') in 0.013386 seconds 
+  Import took 0.017628 seconds .
 
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2631.
-Total: 3.113600 ms (FindLiveObjects: 0.210200 ms CreateObjectMapping: 0.081100 ms MarkObjects: 2.709800 ms  DeleteObjects: 0.111500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006782 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.059 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1059ms)
-		BeginReloadAssembly (141ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (40ms)
-		EndReloadAssembly (830ms)
-			LoadAssemblies (118ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (306ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (39ms)
-			SetupLoadedEditorAssemblies (282ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (89ms)
-				ProcessInitializeOnLoadAttributes (168ms)
-				ProcessInitializeOnLoadMethodAttributes (10ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2195 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 96.1 MB.
-System memory in use after: 96.1 MB.
+Received Import Request.
+  Time since last request: 12.699107 seconds.
+  path: Assets/Prefabs/Cryptomon/Citromon_card.prefab
+  artifactKey: Guid(c5464422f6894194799df24411f49280) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cryptomon/Citromon_card.prefab using Guid(c5464422f6894194799df24411f49280) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96f0b8528dd4485b6b6301709df8a120') in 0.013004 seconds 
+  Import took 0.017654 seconds .
 
-Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 2633.
-Total: 3.015100 ms (FindLiveObjects: 0.187200 ms CreateObjectMapping: 0.067000 ms MarkObjects: 2.652700 ms  DeleteObjects: 0.107400 ms)
+========================================================================
+Received Import Request.
+  Time since last request: 8.128222 seconds.
+  path: Assets/Prefabs/Cryptomon/Citromon_card.prefab
+  artifactKey: Guid(c5464422f6894194799df24411f49280) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cryptomon/Citromon_card.prefab using Guid(c5464422f6894194799df24411f49280) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32cc75aa6f08c2f87b9e82dbc3dfd2fd') in 0.012978 seconds 
+  Import took 0.016929 seconds .
 
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 0.994302 seconds.
+  path: Assets/Prefabs/Cryptomon/Citromon_card.prefab
+  artifactKey: Guid(c5464422f6894194799df24411f49280) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cryptomon/Citromon_card.prefab using Guid(c5464422f6894194799df24411f49280) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a48cae2b6c6540780d441bd281b9a90b') in 0.020337 seconds 
+  Import took 0.024886 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.009421 seconds.
+  path: Assets/Prefabs/Cryptomon/Citromon_card.prefab
+  artifactKey: Guid(c5464422f6894194799df24411f49280) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cryptomon/Citromon_card.prefab using Guid(c5464422f6894194799df24411f49280) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22cc6ac7b3656f01a93706a556a83656') in 0.014385 seconds 
+  Import took 0.019380 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.394429 seconds.
+  path: Assets/Prefabs/Cryptomon/Citromon_card.prefab
+  artifactKey: Guid(c5464422f6894194799df24411f49280) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cryptomon/Citromon_card.prefab using Guid(c5464422f6894194799df24411f49280) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd39195102786d52dd3acb73e4d4f3f8a') in 0.014063 seconds 
+  Import took 0.017954 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.836277 seconds.
+  path: Assets/Prefabs/Cryptomon/Citromon_card.prefab
+  artifactKey: Guid(c5464422f6894194799df24411f49280) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cryptomon/Citromon_card.prefab using Guid(c5464422f6894194799df24411f49280) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d2c5259e40a139e235414a48bd91cc7') in 0.012100 seconds 
+  Import took 0.016389 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.805260 seconds.
+  path: Assets/Prefabs/Cryptomon/Citromon_card.prefab
+  artifactKey: Guid(c5464422f6894194799df24411f49280) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cryptomon/Citromon_card.prefab using Guid(c5464422f6894194799df24411f49280) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7509c3cf087702534992c1651d95152c') in 0.012384 seconds 
+  Import took 0.016193 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.652256 seconds.
+  path: Assets/Prefabs/Cryptomon/Citromon_card.prefab
+  artifactKey: Guid(c5464422f6894194799df24411f49280) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cryptomon/Citromon_card.prefab using Guid(c5464422f6894194799df24411f49280) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd121724af7253a99ae1b087e6e149521') in 0.014177 seconds 
+  Import took 0.018926 seconds .
+
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

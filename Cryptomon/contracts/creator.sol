@@ -16,22 +16,20 @@ contract creator {
     struct cryptomon {
         uint32 id;
         string name;
-        uint32 attack;
-        uint32 defense;
         uint32 hp;
+        uint32 speed;
         address owner;
         move move1;
         move move2;
     } mapping(uint32 => cryptomon) public cryptomonList;
 
-    function createCryptomon(string memory n, uint32 a, uint32 d, uint32 h) public returns (string memory) {
+    function createCryptomon(string memory n, uint32 h, uint32 s, address o) public returns (string memory) {
         uint32 ID = cryptomon_id++;
         cryptomonList[ID].id = ID;
         cryptomonList[ID].name = n;
-        cryptomonList[ID].attack = a;
-        cryptomonList[ID].defense = d;
         cryptomonList[ID].hp = h;
-        cryptomonList[ID].owner = msg.sender;
+        cryptomonList[ID].speed = s;
+        cryptomonList[ID].owner = o;
         return string(abi.encodePacked(cryptomonList[ID].name, " created successfully!"));
     }
 
@@ -59,6 +57,6 @@ contract creator {
 
     // function to return cryptomon from cryptomon list by id as string
     function ToString(uint32 cID_) public view returns (string memory s) {
-        s = string(abi.encodePacked("name: "));
+        s = string(abi.encodePacked("name: ", cryptomonList[cID_].name));
     }
 }

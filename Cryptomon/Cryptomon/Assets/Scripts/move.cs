@@ -7,8 +7,4 @@ public class move : MonoBehaviour
     public string moveName;
     public int damage;
     public int missRate;
-    
-    public move() {
-        //Initialize variables from solidity
-    }
 }
