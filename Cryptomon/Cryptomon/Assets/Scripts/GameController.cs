@@ -9,11 +9,12 @@ public class GameController : MonoBehaviour
 {
     public GameObject[] cardPrefabs; public GameObject[] cards; public Cryptomon[] cList;
     public GameObject Menu; public Text userAddress1; public Text userAddress2;
-    public GameObject UI;
+    public GameObject UI; public GameObject GameOverUI; public Text winner;
     public int turn;
 
     // Start is called before the first frame update
     void Start() {
+        GameOverUI.SetActive(false);
         string line;
         StreamReader reader = new StreamReader("Assets/Scripts/deploy.txt");
         while((line = reader.ReadLine()) != null) {
@@ -63,10 +64,13 @@ public class GameController : MonoBehaviour
             if (r <= cList[turn].moves[0].missRate) break;
             if (turn == 0) cards[1].GetComponent<Cryptomon>().hp--;
             else cards[0].GetComponent<Cryptomon>().hp--;
-            yield return new WaitForSeconds(0.075f);
+            yield return new WaitForSeconds(0.025f);
             cards[1].transform.Find("HP Text").gameObject.GetComponent<Text>().text = cards[1].GetComponent<Cryptomon>().hp.ToString();
             cards[0].transform.Find("HP Text").gameObject.GetComponent<Text>().text = cards[0].GetComponent<Cryptomon>().hp.ToString();
-            if (!areAllAlive()) gameOver();
+            if (!areAllAlive()) {
+                gameOver();
+                yield break;
+            }
         }
         if (turn == 0) turn = 1;
         else turn = 0;
@@ -85,10 +89,13 @@ public class GameController : MonoBehaviour
             if (r >= cList[turn].moves[1].missRate) break;
             if (turn == 0) cards[1].GetComponent<Cryptomon>().hp--;
             else cards[0].GetComponent<Cryptomon>().hp--;
-            yield return new WaitForSeconds(0.075f);
+            yield return new WaitForSeconds(0.025f);
             cards[1].transform.Find("HP Text").gameObject.GetComponent<Text>().text = cards[1].GetComponent<Cryptomon>().hp.ToString();
             cards[0].transform.Find("HP Text").gameObject.GetComponent<Text>().text = cards[0].GetComponent<Cryptomon>().hp.ToString();
-            if (!areAllAlive()) gameOver();
+            if (!areAllAlive()) {
+                gameOver();
+                yield break;
+            }
         }
         if (turn == 0) turn = 1;
         else turn = 0;
@@ -96,7 +103,14 @@ public class GameController : MonoBehaviour
     }
 
     private void gameOver() {
-        
+        for (int i = 0; i < cards.Length; i++) {
+            cards[i].transform.Find("Move 1").gameObject.GetComponent<Button>().interactable = false;
+            cards[i].transform.Find("Move 2").gameObject.GetComponent<Button>().interactable = false;
+            cards[i].SetActive(false);
+        }
+        GameOverUI.SetActive(true);
+        if (!(cards[0].GetComponent<Cryptomon>().hp <= 0)) winner.text = $"{cards[0].GetComponent<Cryptomon>().owner}\nWins";
+        else winner.text = $"{cards[1].GetComponent<Cryptomon>().owner}\nWins";
     }
 
     private bool areAllAlive() {
